@@ -176,7 +176,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 0;
 		g.setConstraints(lname1, c);
 		p1.add(lname1);
-		
+
 		c.gridy = 1;
 		c.gridx = 1;
 		g.setConstraints(tname1, c);
@@ -201,7 +201,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 1;
 		g.setConstraints(tsex1, c);
 		p1.add(tsex1);
-		
+
 		c.gridy = 4;
 		c.gridx = 0;
 		g.setConstraints(lfhname1, c);
@@ -216,7 +216,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 0;
 		g.setConstraints(ldoa1, c);
 		p1.add(ldoa1);
-		
+
 		c.gridy = 5;
 		c.gridx = 1;
 		g.setConstraints(tdoa1, c);
@@ -241,7 +241,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 1;
 		g.setConstraints(tadd1, c);
 		p1.add(tadd1);
-		
+
 		c.gridy = 8;
 		c.gridx = 0;
 		g.setConstraints(lphone1, c);
@@ -266,7 +266,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 0;
 		g.setConstraints(bgenerate, c);
 		p1.add(bgenerate);
-		
+
 		c.gridy = 10;
 		c.gridx = 1;
 		g.setConstraints(badmit, c);
@@ -276,5 +276,51 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 0;
 		g.setConstraints(bquit1, c);
 		p1.add(bquit1);
+
+		// For Panel2 i.e discharge
+		c.gridy = 0;
+		c.gridx = 0;
+		g.setConstraints(lid2, c);
+		p2.add(lid2);
+
+		c.gridy = 0;
+		c.gridx = 1;
+		g.setConstraints(tid2, c);
+		p2.add(tid2);
+
+		c.gridy = 1;
+		c.gridx = 0;
+		g.setConstraints(lname2, c);
+		p2.add(lname2);
+
+		c.gridy = 1;
+		c.gridx = 1;
+		g.setConstraints(tname2, c);
+		p2.add(tname2);
+
+		c.gridy = 2;
+		c.gridx = 0;
+		g.setConstraints(lage2, c);
+		p2.add(lage2);
+
+		c.gridy = 2;
+		c.gridx = 1;
+		g.setConstraints(tage2, c);
+		p2.add(tage2);
+
+		c.gridy = 3;
+		c.gridx = 0;
+		g.setConstraints(lsex2, c);
+		p2.add(lsex2);
+
+		c.gridy = 3;
+		c.gridx = 1;
+		g.setConstraints(tsex2, c);
+		p2.add(tsex2);
+
+		c.gridy = 4;
+		c.gridx = 0;
+		g.setConstraints(lfhname2, c);
+		p2.add(lfhname2);
 	}
 }
