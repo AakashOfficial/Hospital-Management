@@ -537,5 +537,16 @@ public class Hospital extends JApplet implements ActionListener {
 			} else
 				fpop.setVisible(true);
 		}
+		
+		if (ae.getActionCommand().equals("Generate ID")) {
+			String str1 = tname1.getText();
+			String str2 = tphone1.getText();
+			String temp1 = str1.substring(0, 5);
+			String temp2 = str2.substring(7, 10);
+			tid1.setText(temp1 + temp2);
+			Calendar cal = Calendar.getInstance();
+			String str3 = cal.get(Calendar.DATE) + "-" + (cal.get(Calendar.MONTH) + 1) + "-" + cal.get(Calendar.YEAR);
+			tdoa1.setText(str3);
+		}
 }
 }
