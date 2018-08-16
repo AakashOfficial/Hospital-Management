@@ -107,4 +107,25 @@ public class Hospital extends JApplet implements ActionListener {
 	// Setting the layout
 	GridBagLayout g = new GridBagLayout();
 	GridBagConstraints c = new GridBagConstraints();
+	
+	Hospital() {
+		f.setVisible(true);
+		f.setSize(800, 800);
+		fpop.setSize(400, 200);
+		fpop.setLayout(g);
+		f1.setSize(800, 800);
+
+		f.getContentPane().add(p);
+		f1.getContentPane().add(tp);
+		fpop.getContentPane().add(lpop);
+
+		tp.addTab("Admit", p1);
+		tp.addTab("Discharge", p2);
+		tp.addTab("Search", p3);
+
+		p.setLayout(g);
+		p1.setLayout(g);
+		p2.setLayout(g);
+		p3.setLayout(g);
+	}
 }
