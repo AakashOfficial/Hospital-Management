@@ -529,5 +529,13 @@ public class Hospital extends JApplet implements ActionListener {
 		if (ae.getActionCommand().equals("Quit")) {
 			System.exit(0);
 		}
+		
+		if (ae.getActionCommand().equals("OK")) {
+			if ((t1.getText().equals("Aakash")) && (t2.getText().equals("Tyagi"))) {
+				f.setVisible(false);
+				f1.setVisible(true);
+			} else
+				fpop.setVisible(true);
+		}
 }
 }
