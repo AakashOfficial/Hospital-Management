@@ -89,5 +89,9 @@ public class Hospital extends JApplet implements ActionListener {
 	JButton b1 = new JButton("OK");
 	JButton b2 = new JButton("Quit");
 
+	JButton badmit = new JButton("Admit");
+	JButton bgenerate = new JButton("Generate ID");
+	JButton bquit1 = new JButton("Quit");
+
 	
 }
