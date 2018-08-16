@@ -443,7 +443,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 1;
 		g.setConstraints(tfhname3, c);
 		p3.add(tfhname3);
-		
+
 		c.gridy = 5;
 		c.gridx = 0;
 		g.setConstraints(ldoa3, c);
@@ -473,7 +473,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 1;
 		g.setConstraints(tadd3, c);
 		p3.add(tadd3);
-		
+
 		c.gridy = 8;
 		c.gridx = 0;
 		g.setConstraints(lphone3, c);
@@ -503,5 +503,12 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 1;
 		g.setConstraints(bquit3, c);
 		p3.add(bquit3);
+
+		// Background Color
+		tp.setBackground(Color.RED);
+		p.setBackground(Color.WHITE);
+		p1.setBackground(Color.CYAN);
+		p2.setBackground(Color.CYAN);
+		p3.setBackground(Color.CYAN);
 	}
 }
