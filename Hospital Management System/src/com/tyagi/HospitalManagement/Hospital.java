@@ -548,5 +548,27 @@ public class Hospital extends JApplet implements ActionListener {
 			String str3 = cal.get(Calendar.DATE) + "-" + (cal.get(Calendar.MONTH) + 1) + "-" + cal.get(Calendar.YEAR);
 			tdoa1.setText(str3);
 		}
+		
+		if (ae.getActionCommand().equals("Admit")) {
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "");
+				PreparedStatement stmt = con.prepareStatement("INSERT into project VALUES(?,?,?,?,?,?,?,?,?,?)");
+				stmt.setString(1, tid1.getText());
+				stmt.setString(2, tname1.getText());
+				stmt.setString(3, tage1.getText());
+				stmt.setString(4, tsex1.getText());
+				stmt.setString(5, tfhname1.getText());
+				stmt.setString(6, tdoa1.getText());
+				stmt.setString(7, null);
+				stmt.setString(8, tadd1.getText());
+				stmt.setString(9, tphone1.getText());
+				stmt.setString(10, null);
+				stmt.executeUpdate();
+
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+		}
 }
 }
