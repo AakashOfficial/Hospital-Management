@@ -614,5 +614,46 @@ public class Hospital extends JApplet implements ActionListener {
 
 		if (ae.getActionCommand().equals("Discharge")) {
 		}
+		
+		if (ae.getActionCommand().equals("Search")) {
+			String s1id = "";
+			String s1age = "";
+			String s1sex = "";
+			String s1fhname = "";
+			String s1doa = "";
+			String s1dod = "";
+			String s1add = "";
+			String s1phone = "";
+			String s1bill = "";
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "");
+				PreparedStatement stmt3 = con.prepareStatement("SELECT * FROM project where name=?");
+				stmt3.setString(1, tname3.getText());
+				ResultSet rs3 = stmt3.executeQuery();
+				while (rs3.next()) {
+					s1id = rs3.getString(1);
+					s1age = rs3.getString(3);
+					s1sex = rs3.getString(4);
+					s1fhname = rs3.getString(5);
+					s1doa = rs3.getString(6);
+					s1dod = rs3.getString(7);
+					s1add = rs3.getString(8);
+					s1phone = rs3.getString(9);
+					s1bill = rs3.getString(10);
+				}
+				tid3.setText(s1id);
+				tage3.setText(s1age);
+				tsex3.setText(s1sex);
+				tfhname3.setText(s1fhname);
+				tdoa3.setText(s1doa);
+				tdod3.setText(s1dod);
+				tadd3.setText(s1add);
+				tphone3.setText(s1phone);
+				tbill3.setText(s1bill);
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+		}
 	}
 }
