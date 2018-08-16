@@ -523,4 +523,11 @@ public class Hospital extends JApplet implements ActionListener {
 		b1.addActionListener(this);
 		b2.addActionListener(this);
 	}
+
+	public void actionPerformed(ActionEvent ae) {
+
+		if (ae.getActionCommand().equals("Quit")) {
+			System.exit(0);
+		}
+}
 }
