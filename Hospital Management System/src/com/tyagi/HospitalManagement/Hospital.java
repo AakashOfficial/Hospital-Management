@@ -322,7 +322,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 0;
 		g.setConstraints(lfhname2, c);
 		p2.add(lfhname2);
-		
+
 		c.gridy = 4;
 		c.gridx = 1;
 		g.setConstraints(tfhname2, c);
@@ -357,7 +357,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 1;
 		g.setConstraints(tadd2, c);
 		p2.add(tadd2);
-		
+
 		c.gridy = 8;
 		c.gridx = 0;
 		g.setConstraints(lphone2, c);
@@ -382,7 +382,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 0;
 		g.setConstraints(bsubmit, c);
 		p2.add(bsubmit);
-		
+
 		c.gridy = 10;
 		c.gridx = 1;
 		g.setConstraints(bdischarge, c);
@@ -392,5 +392,56 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 0;
 		g.setConstraints(bquit2, c);
 		p2.add(bquit2);
+
+		// For Panel3 i.e search
+		c.gridy = 0;
+		c.gridx = 0;
+		g.setConstraints(lid3, c);
+		p3.add(lid3);
+
+		c.gridy = 0;
+		c.gridx = 1;
+		g.setConstraints(tid3, c);
+		p3.add(tid3);
+
+		c.gridy = 1;
+		c.gridx = 0;
+		g.setConstraints(lname3, c);
+		p3.add(lname3);
+
+		c.gridy = 1;
+		c.gridx = 1;
+		g.setConstraints(tname3, c);
+		p3.add(tname3);
+
+		c.gridy = 2;
+		c.gridx = 0;
+		g.setConstraints(lage3, c);
+		p3.add(lage3);
+
+		c.gridy = 2;
+		c.gridx = 1;
+		g.setConstraints(tage3, c);
+		p3.add(tage3);
+
+		c.gridy = 3;
+		c.gridx = 0;
+		g.setConstraints(lsex3, c);
+		p3.add(lsex3);
+
+		c.gridy = 3;
+		c.gridx = 1;
+		g.setConstraints(tsex3, c);
+		p3.add(tsex3);
+
+		c.gridy = 4;
+		c.gridx = 0;
+		g.setConstraints(lfhname3, c);
+		p3.add(lfhname3);
+
+		c.gridy = 4;
+		c.gridx = 1;
+		g.setConstraints(tfhname3, c);
+		p3.add(tfhname3);
 	}
 }
