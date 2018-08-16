@@ -107,7 +107,7 @@ public class Hospital extends JApplet implements ActionListener {
 	// Setting the layout
 	GridBagLayout g = new GridBagLayout();
 	GridBagConstraints c = new GridBagConstraints();
-	
+
 	Hospital() {
 		f.setVisible(true);
 		f.setSize(800, 800);
@@ -127,7 +127,7 @@ public class Hospital extends JApplet implements ActionListener {
 		p1.setLayout(g);
 		p2.setLayout(g);
 		p3.setLayout(g);
-		
+
 		c.insets = new Insets(5, 5, 10, 10);
 		c.fill = GridBagConstraints.BOTH;
 
@@ -145,7 +145,7 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 0;
 		g.setConstraints(label2, c);
 		p.add(label2);
-		
+
 		c.gridy = 1;
 		c.gridx = 1;
 		g.setConstraints(t2, c);
@@ -160,5 +160,21 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 1;
 		g.setConstraints(b2, c);
 		p.add(b2);
+
+		// For Panel1 i.e Admit
+		c.gridy = 0;
+		c.gridx = 0;
+		g.setConstraints(lid1, c);
+		p1.add(lid1);
+
+		c.gridy = 0;
+		c.gridx = 1;
+		g.setConstraints(tid1, c);
+		p1.add(tid1);
+
+		c.gridy = 1;
+		c.gridx = 0;
+		g.setConstraints(lname1, c);
+		p1.add(lname1);
 	}
 }
