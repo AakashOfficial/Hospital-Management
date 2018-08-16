@@ -97,11 +97,14 @@ public class Hospital extends JApplet implements ActionListener {
 	JButton bdischarge = new JButton("Discharge");
 	JButton bquit2 = new JButton("Quit");
 
-
-    JButton bsearch = new JButton("Search");
+	JButton bsearch = new JButton("Search");
 	JButton bquit3 = new JButton("Quit");
-	
+
 	// for pop-up
-		JFrame fpop = new JFrame("WARNING");
-		JLabel lpop = new JLabel("Either Username or Password is invalid");
+	JFrame fpop = new JFrame("WARNING");
+	JLabel lpop = new JLabel("Either Username or Password is invalid");
+
+	// Setting the layout
+	GridBagLayout g = new GridBagLayout();
+	GridBagConstraints c = new GridBagConstraints();
 }
