@@ -35,5 +35,16 @@ public class Hospital extends JApplet implements ActionListener {
 	JLabel lphone2 = new JLabel("Phone No.");
 	JLabel lbill2 = new JLabel("Bill");
 
+	JLabel lid3 = new JLabel("Patient ID");
+	JLabel lname3 = new JLabel("Enter Name");
+	JLabel lage3 = new JLabel("Age");
+	JLabel lsex3 = new JLabel("Sex");
+	JLabel lfhname3 = new JLabel("Father's/Husband's Name");
+	JLabel ldoa3 = new JLabel("Date of Admission");
+	JLabel ldod3 = new JLabel("Date of Discharge");
+	JLabel ladd3 = new JLabel("Address");
+	JLabel lphone3 = new JLabel("Phone No.");
+	JLabel lbill3 = new JLabel("Bill");
+
 	
 }
