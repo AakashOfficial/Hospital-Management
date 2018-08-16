@@ -46,5 +46,16 @@ public class Hospital extends JApplet implements ActionListener {
 	JLabel lphone3 = new JLabel("Phone No.");
 	JLabel lbill3 = new JLabel("Bill");
 
+	JTextField tid1 = new JTextField(20);
+	JTextField tname1 = new JTextField(20);
+	JTextField tage1 = new JTextField(20);
+	JTextField tsex1 = new JTextField(20);
+	JTextField tfhname1 = new JTextField(20);
+	JTextField tdoa1 = new JTextField(20);
+	JTextField tdod1 = new JTextField(20);
+	JTextField tadd1 = new JTextField(20);
+	JTextField tphone1 = new JTextField(20);
+	JTextField tbill1 = new JTextField(20);
+
 	
 }
