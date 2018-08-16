@@ -529,7 +529,7 @@ public class Hospital extends JApplet implements ActionListener {
 		if (ae.getActionCommand().equals("Quit")) {
 			System.exit(0);
 		}
-		
+
 		if (ae.getActionCommand().equals("OK")) {
 			if ((t1.getText().equals("Aakash")) && (t2.getText().equals("Tyagi"))) {
 				f.setVisible(false);
@@ -537,7 +537,7 @@ public class Hospital extends JApplet implements ActionListener {
 			} else
 				fpop.setVisible(true);
 		}
-		
+
 		if (ae.getActionCommand().equals("Generate ID")) {
 			String str1 = tname1.getText();
 			String str2 = tphone1.getText();
@@ -548,7 +548,7 @@ public class Hospital extends JApplet implements ActionListener {
 			String str3 = cal.get(Calendar.DATE) + "-" + (cal.get(Calendar.MONTH) + 1) + "-" + cal.get(Calendar.YEAR);
 			tdoa1.setText(str3);
 		}
-		
+
 		if (ae.getActionCommand().equals("Admit")) {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
@@ -570,7 +570,7 @@ public class Hospital extends JApplet implements ActionListener {
 				System.out.println(e);
 			}
 		}
-		
+
 		if (ae.getActionCommand().equals("Submit")) {
 			String sname = "";
 			String sage = "";
@@ -611,5 +611,8 @@ public class Hospital extends JApplet implements ActionListener {
 				System.out.println(e);
 			}
 		}
-}
+
+		if (ae.getActionCommand().equals("Discharge")) {
+		}
+	}
 }
