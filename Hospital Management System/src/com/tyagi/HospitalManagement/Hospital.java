@@ -473,5 +473,35 @@ public class Hospital extends JApplet implements ActionListener {
 		c.gridx = 1;
 		g.setConstraints(tadd3, c);
 		p3.add(tadd3);
+		
+		c.gridy = 8;
+		c.gridx = 0;
+		g.setConstraints(lphone3, c);
+		p3.add(lphone3);
+
+		c.gridy = 8;
+		c.gridx = 1;
+		g.setConstraints(tphone3, c);
+		p3.add(tphone3);
+
+		c.gridy = 9;
+		c.gridx = 0;
+		g.setConstraints(lbill3, c);
+		p3.add(lbill3);
+
+		c.gridy = 9;
+		c.gridx = 1;
+		g.setConstraints(tbill3, c);
+		p3.add(tbill3);
+
+		c.gridy = 10;
+		c.gridx = 0;
+		g.setConstraints(bsearch, c);
+		p3.add(bsearch);
+
+		c.gridy = 10;
+		c.gridx = 1;
+		g.setConstraints(bquit3, c);
+		p3.add(bquit3);
 	}
 }
