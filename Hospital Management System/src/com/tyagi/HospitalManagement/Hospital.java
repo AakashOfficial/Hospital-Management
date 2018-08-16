@@ -656,4 +656,8 @@ public class Hospital extends JApplet implements ActionListener {
 			}
 		}
 	}
+	
+	public static void main(String args[]) {
+		Hospital obj = new Hospital();
+	}
 }
