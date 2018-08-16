@@ -510,5 +510,17 @@ public class Hospital extends JApplet implements ActionListener {
 		p1.setBackground(Color.CYAN);
 		p2.setBackground(Color.CYAN);
 		p3.setBackground(Color.CYAN);
+
+		// Adding Listeners
+		badmit.addActionListener(this);
+		bgenerate.addActionListener(this);
+		bquit1.addActionListener(this);
+		bsubmit.addActionListener(this);
+		bdischarge.addActionListener(this);
+		bquit2.addActionListener(this);
+		bsearch.addActionListener(this);
+		bquit3.addActionListener(this);
+		b1.addActionListener(this);
+		b2.addActionListener(this);
 	}
 }
