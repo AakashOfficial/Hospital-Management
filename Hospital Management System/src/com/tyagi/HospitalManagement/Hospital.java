@@ -570,5 +570,46 @@ public class Hospital extends JApplet implements ActionListener {
 				System.out.println(e);
 			}
 		}
+		
+		if (ae.getActionCommand().equals("Submit")) {
+			String sname = "";
+			String sage = "";
+			String ssex = "";
+			String sfhname = "";
+			String sdoa = "";
+			String sadd = "";
+			String sphone = "";
+			long m, n, days, bill;
+			Calendar cal = Calendar.getInstance();
+			String str3 = cal.get(Calendar.DATE) + "-" + (cal.get(Calendar.MONTH) + 1) + "-" + cal.get(Calendar.YEAR);
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "");
+				PreparedStatement stmt2 = con.prepareStatement("SELECT * FROM project where id=?");
+				stmt2.setString(1, tid2.getText());
+				ResultSet rs2 = stmt2.executeQuery();
+				while (rs2.next()) {
+					sname = rs2.getString(2);
+					sage = rs2.getString(3);
+					ssex = rs2.getString(4);
+					sfhname = rs2.getString(5);
+					sdoa = rs2.getString(6);
+					// sdod=rs2.getString(7);
+					sadd = rs2.getString(8);
+					sphone = rs2.getString(9);
+					// sbill=rs2.getString(10);
+				}
+				tdod2.setText(str3);
+				tname2.setText(sname);
+				tage2.setText(sage);
+				tsex2.setText(ssex);
+				tfhname2.setText(sfhname);
+				tdoa2.setText(sdoa);
+				tadd2.setText(sadd);
+				tphone2.setText(sphone);
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+		}
 }
 }
